@@ -1,0 +1,25 @@
+{
+  "name": "express-app1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "description": "ExpressApp1",
+  "author": {
+    "name": "tbton"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "cookie-parser": "^1.4.0",
+    "debug": "^2.2.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.1.4",
+    "morgan": "^1.7.0",
+    "pug": "^2.0.0-beta6",
+    "request": "^2.87.0",
+    "serve-favicon": "^2.3.0"
+  }
+}
