@@ -1,0 +1,3 @@
+Welcome to mLab.  Your new subscription is being created and will be available shortly.  Please consult the mLab Add-on Admin UI to check on its progress.
+Created mongolab-contoured-49908 as MONGOLAB_ORANGE_URI
+Use heroku addons:docs mongolab to view documentation
