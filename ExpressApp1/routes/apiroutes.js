@@ -26,7 +26,7 @@ module.exports = function (app) {
                 var summary = $(element).find(".teaser").text();
                 var url = $(element).find(".teaser").find("a").attr("href");
 
-                console.log(headline + " " + summary + " " + url);
+                //console.log(headline + " " + summary + " " + url);
 
                 //If element has a headline, insert into table
                 if (headline) {
@@ -43,7 +43,7 @@ module.exports = function (app) {
                             }
                             else {
                                 // Otherwise, log the inserted data
-                                console.log(inserted);
+                                //console.log(inserted);
                             }
                         });
                 }
@@ -52,5 +52,13 @@ module.exports = function (app) {
 
         // Send a "Scrape Complete" message to the browser
         console.log("Scrape Complete");
+    });
+
+    app.get("/show_cards", function (req,res) {
+        articledb.find({})
+            .then(function (cards) {
+                //console.log("**API Route Cards** "+cards);
+                res.json(cards);
+            });
     });
 }

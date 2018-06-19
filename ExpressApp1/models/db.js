@@ -25,14 +25,14 @@ const Articles = new Schema({
 
 const articlesdb = mongoose.model("articles", Articles);
 
-articlesdb.create({
-    headline: "test",
-    summary: "",
-    url: "",
-    comment:["testcomment1","testcomment2"]
-}, function (err, res) {
-    console.log(err);
-    console.log(res);
-    //console.log("table created");
-});
+//articlesdb.create({
+//    headline: "test",
+//    summary: "",
+//    url: "",
+//    comment:["testcomment1","testcomment2"]
+//}, function (err, res) {
+//    console.log(err);
+//    console.log(res);
+//    //console.log("table created");
+//});
 module.exports = articlesdb;
