@@ -9,6 +9,5 @@ $(document).ready(function () {
             $("#cards_holder").empty();
             scrape_arts(create_cards);
         });
-
     });
 });

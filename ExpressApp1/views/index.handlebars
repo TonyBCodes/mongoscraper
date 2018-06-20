@@ -1,15 +1,27 @@
 <div id="main">
 
-    
-    <div>
-        <button class="btn btn-primary" type="button" id="start_scrape">Click To Scrape The Articles</button>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">NPR Article Scraper</a>
+
+
+        <div  id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" id="start_scrape" href="#">Click To Scrape The Articles<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+
     <div class="row" id="results">
         <div class="span9">
             <div class="bot2 clearfix">
-                <h3 id="searchTitle">
-                    {{!-- --}}
-                </h3>
+                <h3 id="searchTitle"></h3>
                 <div id="cards_holder"></div>
             </div>
         </div>

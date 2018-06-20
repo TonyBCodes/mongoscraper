@@ -40,10 +40,12 @@ module.exports = function (app) {
                             if (err) {
                                 // Log the error if one is encountered during the query
                                 console.log(err);
+                                res.end();
                             }
                             else {
                                 // Otherwise, log the inserted data
                                 //console.log(inserted);
+                                res.end();
                             }
                         });
                 }
